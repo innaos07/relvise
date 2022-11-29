@@ -15,3 +15,4 @@ You can directly use them in pages and other components without the need to impo
 - `<MainPracticeApp>` | `<main-practice-app>` (components/main/PracticeApp.vue)
 - `<MainPromoApp>` | `<main-promo-app>` (components/main/PromoApp.vue)
 - `<MainServicesApp>` | `<main-services-app>` (components/main/ServicesApp.vue)
+- `<MainSubscribeApp>` | `<main-subscribe-app>` (components/main/SubscribeApp.vue)

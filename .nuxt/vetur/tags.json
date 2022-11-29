@@ -25,5 +25,8 @@
   },
   "MainServicesApp": {
     "description": "Auto imported from components/main/ServicesApp.vue"
+  },
+  "MainSubscribeApp": {
+    "description": "Auto imported from components/main/SubscribeApp.vue"
   }
 }

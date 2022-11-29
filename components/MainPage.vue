@@ -6,6 +6,7 @@
     <PracticeApp />
     <AboutApp />
     |<ClientsApp />
+    <SubscribeApp />
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import AdvantagesApp from './main/AdvantagesApp.vue';
 import PracticeApp from './main/PracticeApp.vue';
 import AboutApp from './main/AboutApp.vue';
 import ClientsApp from './main/ClientsApp.vue';
+import SubscribeApp from './main/SubscribeApp.vue';
 
 export default {
     components: { 
@@ -24,7 +26,8 @@ export default {
       AdvantagesApp,
       PracticeApp,
       AboutApp,
-      ClientsApp
+      ClientsApp,
+      SubscribeApp
     },
 }
 </script>

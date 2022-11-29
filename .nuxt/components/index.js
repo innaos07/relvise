@@ -7,6 +7,7 @@ export { default as MainClientsApp } from '../../components/main/ClientsApp.vue'
 export { default as MainPracticeApp } from '../../components/main/PracticeApp.vue'
 export { default as MainPromoApp } from '../../components/main/PromoApp.vue'
 export { default as MainServicesApp } from '../../components/main/ServicesApp.vue'
+export { default as MainSubscribeApp } from '../../components/main/SubscribeApp.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
