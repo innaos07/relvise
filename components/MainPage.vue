@@ -3,7 +3,8 @@
     <PromoApp />
     <ServicesApp />
     <AdvantagesApp />
-    <PracticeApp/>
+    <PracticeApp />
+    <AboutUs />
   </main>
 </template>
 
@@ -12,13 +13,15 @@ import PromoApp from './main/PromoApp.vue';
 import ServicesApp from './main/ServicesApp.vue';
 import AdvantagesApp from './main/AdvantagesApp.vue';
 import PracticeApp from './main/PracticeApp.vue';
+import AboutUs from './main/AboutUs.vue';
 
 export default {
     components: { 
       PromoApp, 
       ServicesApp,
       AdvantagesApp,
-      PracticeApp
+      PracticeApp,
+      AboutUs
     },
 }
 </script>

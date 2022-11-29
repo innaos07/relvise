@@ -8,6 +8,9 @@
   "UIButtonApp": {
     "description": "Auto imported from components/UI/ButtonApp.vue"
   },
+  "MainAboutUs": {
+    "description": "Auto imported from components/main/AboutUs.vue"
+  },
   "MainAdvantagesApp": {
     "description": "Auto imported from components/main/AdvantagesApp.vue"
   },

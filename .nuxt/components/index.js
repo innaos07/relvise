@@ -1,6 +1,7 @@
 export { default as HeaderPage } from '../../components/HeaderPage.vue'
 export { default as MainPage } from '../../components/MainPage.vue'
 export { default as UIButtonApp } from '../../components/UI/ButtonApp.vue'
+export { default as MainAboutUs } from '../../components/main/AboutUs.vue'
 export { default as MainAdvantagesApp } from '../../components/main/AdvantagesApp.vue'
 export { default as MainPracticeApp } from '../../components/main/PracticeApp.vue'
 export { default as MainPromoApp } from '../../components/main/PromoApp.vue'

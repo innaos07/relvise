@@ -1,7 +1,7 @@
 <template>
   <section class="practice">
     <div class="container">
-      <div class="practice__header">
+      <div class="practice__header d-flex flex-column justify-content-center">
         <h2 class="header__title">Practice Advice</h2>
         <p class="header__description">
           Problems trying to resolve the conflict between the two major realms

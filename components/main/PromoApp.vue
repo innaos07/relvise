@@ -46,6 +46,7 @@ export default {
     font-size: 58px;
     line-height: 138%;
     letter-spacing: 0.2px;
+    color: #252B42;
   }
 
   .promo__description {

@@ -9,6 +9,7 @@ You can directly use them in pages and other components without the need to impo
 - `<HeaderPage>` | `<header-page>` (components/HeaderPage.vue)
 - `<MainPage>` | `<main-page>` (components/MainPage.vue)
 - `<UIButtonApp>` | `<u-i-button-app>` (components/UI/ButtonApp.vue)
+- `<MainAboutUs>` | `<main-about-us>` (components/main/AboutUs.vue)
 - `<MainAdvantagesApp>` | `<main-advantages-app>` (components/main/AdvantagesApp.vue)
 - `<MainPracticeApp>` | `<main-practice-app>` (components/main/PracticeApp.vue)
 - `<MainPromoApp>` | `<main-promo-app>` (components/main/PromoApp.vue)
