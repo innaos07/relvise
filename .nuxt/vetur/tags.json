@@ -1,0 +1,23 @@
+{
+  "HeaderPage": {
+    "description": "Auto imported from components/HeaderPage.vue"
+  },
+  "MainPage": {
+    "description": "Auto imported from components/MainPage.vue"
+  },
+  "UIButtonApp": {
+    "description": "Auto imported from components/UI/ButtonApp.vue"
+  },
+  "MainAdvantagesApp": {
+    "description": "Auto imported from components/main/AdvantagesApp.vue"
+  },
+  "MainPracticeApp": {
+    "description": "Auto imported from components/main/PracticeApp.vue"
+  },
+  "MainPromoApp": {
+    "description": "Auto imported from components/main/PromoApp.vue"
+  },
+  "MainServicesApp": {
+    "description": "Auto imported from components/main/ServicesApp.vue"
+  }
+}

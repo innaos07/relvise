@@ -1,0 +1,48 @@
+@import 'variables';
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 500;
+    color: #252B42;;
+}
+
+.header__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 143%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+
+    @media (max-width: $md-width) {
+        font-size: 32px;
+    }
+}
+
+.header__description {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
