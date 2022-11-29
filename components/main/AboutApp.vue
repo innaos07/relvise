@@ -8,7 +8,6 @@
                 of Classical physics: Newtonian mechanics 
               </p>
             </div>
-
             <div class="about__body row">
               <div class="about__video col-12 col-lg-6">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/bNpx7gpSqbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -59,7 +58,6 @@ export default {
           text: 'Things on a very small scale very small scale very small scale ...',
         }
       ],
-
     }
   }
 

@@ -21,7 +21,8 @@
             <a href="#" class="item__image">
               <img 
                 :src="require(`@/assets/img/${item.img}.jpg`)"
-                :alt="item.title"/>
+                :alt="item.title"
+              />
             </a>
           </div>
         </div>
