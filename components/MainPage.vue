@@ -7,6 +7,7 @@
     <AboutApp />
     |<ClientsApp />
     <SubscribeApp />
+    <ContactsApp />
   </main>
 </template>
 
@@ -18,6 +19,7 @@ import PracticeApp from './main/PracticeApp.vue';
 import AboutApp from './main/AboutApp.vue';
 import ClientsApp from './main/ClientsApp.vue';
 import SubscribeApp from './main/SubscribeApp.vue';
+import ContactsApp from './main/ContactsApp.vue';
 
 export default {
     components: { 
@@ -27,7 +29,8 @@ export default {
       PracticeApp,
       AboutApp,
       ClientsApp,
-      SubscribeApp
+      SubscribeApp,
+      ContactsApp
     },
 }
 </script>

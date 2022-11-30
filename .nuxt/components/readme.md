@@ -12,6 +12,7 @@ You can directly use them in pages and other components without the need to impo
 - `<MainAboutApp>` | `<main-about-app>` (components/main/AboutApp.vue)
 - `<MainAdvantagesApp>` | `<main-advantages-app>` (components/main/AdvantagesApp.vue)
 - `<MainClientsApp>` | `<main-clients-app>` (components/main/ClientsApp.vue)
+- `<MainContactsApp>` | `<main-contacts-app>` (components/main/ContactsApp.vue)
 - `<MainPracticeApp>` | `<main-practice-app>` (components/main/PracticeApp.vue)
 - `<MainPromoApp>` | `<main-promo-app>` (components/main/PromoApp.vue)
 - `<MainServicesApp>` | `<main-services-app>` (components/main/ServicesApp.vue)

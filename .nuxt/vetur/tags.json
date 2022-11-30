@@ -17,6 +17,9 @@
   "MainClientsApp": {
     "description": "Auto imported from components/main/ClientsApp.vue"
   },
+  "MainContactsApp": {
+    "description": "Auto imported from components/main/ContactsApp.vue"
+  },
   "MainPracticeApp": {
     "description": "Auto imported from components/main/PracticeApp.vue"
   },

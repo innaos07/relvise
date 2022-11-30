@@ -32,7 +32,7 @@
                     />
                   </div>
                   <div>
-                    <h4 class="item__title">{{item.title}}</h4>
+                    <h3 class="item__title">{{item.title}}</h3>
                     <p class="item__text">{{item.text}}</p>
                   </div>
                 </div>
