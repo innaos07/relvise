@@ -1,48 +1,31 @@
 <template>
   <section class="contacts">
     <div class="container">
-      <div class="contacts__header d-flex flex-column justify-content-center">
+      <div class="contacts__header header d-flex flex-column justify-content-center">
         <h2 class="header__title">Get In Touch</h2>
         <p class="header__description">
-          Problems trying to resolve the conflict between <br />
+          Problems trying to resolve the conflict between<br>
           the two major realms of Classical physics: Newtonian mechanics
         </p>
       </div>
-      <div
-        class="
-          contacts__body
-          d-flex
-          flex-column flex-lg-row
-          align-items-lg-center
-        "
-      >
-        <div
-          class="
-            contacts__item
-            item__contacts
-            d-flex
-            flex-column
-            justify-content-center
-            align-items-center
-          "
+      <div class="contacts__body d-flex flex-column flex-lg-row align-items-center justify-content-lg-center">
+        <div class="contacts__item item-contacts d-flex flex-column justify-content-center align-items-center"
           v-for="item in ContactsList"
           :key="item.icon"
-          :class="{ 'item__contacts--active': item.isActive }"
+          :class="{ 'item-contacts--active': item.isActive }"
         >
-          <div class="item__icon">
+          <div class="item-contacts__icon">
             <img
-              :src="require(`@/assets/img/${item.icon}.svg`)"
+              :src="require(`@/assets/img/${ item.icon }.svg`)"
               :alt="item.title"
             />
           </div>
-          <div class="item__emails">
-            <a :href="item.emailOne" class="item__email">{{ item?.emailOne }}</a>
-            <a :href="item.emailTwo" class="item__email">{{ item?.emailTwo }}</a>
+          <div class="item-contacts__emails">
+            <a :href="item.emailOne" class="item-contacts__email">{{ item?.emailOne }}</a>
+            <a :href="item.emailTwo" class="item-contacts__email">{{ item?.emailTwo }}</a>
           </div>
-          <h3 class="item__title">{{ item.title }}</h3>
-          <a :href="item.link" class="item__btn">
-            {{ item.buttonText }}
-          </a>
+          <h3 class="item-contacts__title">{{ item.title }}</h3>
+          <a :href="item.link" class="item-contacts__btn">{{ item.buttonText }}</a>
         </div>
       </div>
     </div>
@@ -101,23 +84,23 @@ export default {
     margin-bottom: 80px;
   }
 
-  .item__contacts {
+  .item-contacts {
     padding: 50px 40px;
     background-color: #fff;
     color: #252b42;
 
-    .item__icon {
+    .item-contacts__icon {
       width: 72px;
       height: 72px;
     }
 
-    .item__emails {
+    .item-contacts__emails {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    .item__email {
+    .item-contacts__email {
       text-decoration: none;
       font-weight: 600;
       font-size: 14px;
@@ -127,7 +110,7 @@ export default {
       color: inherit;
     }
 
-    .item__title {
+    .item-contacts__title {
       font-weight: 700;
       font-size: 16px;
       line-height: 150%;
@@ -135,7 +118,7 @@ export default {
       letter-spacing: 0.1px;
     }
 
-    .item__btn {
+    .item-contacts__btn {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -161,12 +144,12 @@ export default {
     }
   }
 
-  .item__contacts--active {
+  .item-contacts--active {
     padding: 80px 40px;
     background-color: #252b42;
     color: #ffffff;
 
-    .item__btn {
+    .item-contacts__btn {
       border: 1px solid #ffffff;
       color: #ffffff;
     }
@@ -181,8 +164,17 @@ export default {
     padding-bottom: 100px;
 
     .contacts__header {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
+
+    .item-contacts--active {
+      padding: 50px 40px;
+    }
+  }
+
+  @media (max-width: $sm-width) {
+    padding-top: 30px;
+    padding-bottom: 50px;
   }
 }
 </style>

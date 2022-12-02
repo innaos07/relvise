@@ -113,6 +113,9 @@ export default {};
   }
 
   @media (max-width: $sm-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    
     &::before {
       width: 0;
       height: 0;

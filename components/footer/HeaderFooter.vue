@@ -10,12 +10,8 @@
         "
       >
         <div class="header-footer__left">
-          <h3 class="header-footer__title">
-            Consulting Agency For Your Business
-          </h3>
-          <p class="header-footer__description">
-            the quick fox jumps over the lazy dog
-          </p>
+          <h3 class="header-footer__title">Consulting Agency For Your Business</h3>
+          <p class="header-footer__description">the quick fox jumps over the lazy dog</p>
         </div>
         <a href="#" class="header-footer__btn">Contact Us</a>
       </div>
@@ -85,6 +81,10 @@ export default {};
     .header-footer__btn {
       margin: 0;
     }
+  }
+
+  @media (max-width: $sm-width) {
+    padding: 30px 0;
   }
 }
 </style>

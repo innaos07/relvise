@@ -23,20 +23,20 @@
           </div>
         </div>
         <div class="col-12 col-lg-4">
-          <div class="footer__contact contact">
-            <h4 class="contact__title footer__title">Get In Touch</h4>
+          <div class="footer__contact contact-footer">
+            <h4 class="contact-footer__title footer__title">Get In Touch</h4>
             <div
-              class="contact__item item-contact d-flex align-items-center"
+              class="contact-footer__item d-flex align-items-center"
               v-for="item in ContactList"
               :key="item.link"
             >
-              <div class="item-contact__img">
+              <div class="contact-footer__img">
                 <img
                   :src="require(`@/assets/img/${item.icon}.svg`)"
                   :alt="item.link"
                 />
               </div>
-              <a class="item-contact__link" href="item.link">{{ item.link }}</a>
+              <a class="contact-footer__link" href="item.link">{{ item.link }}</a>
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@ export default {
   }
 
   .item-footer__link,
-  .item-contact__link {
+  .contact-footer__link {
     display: block;
     text-decoration: none;
     font-weight: 500;
@@ -152,11 +152,11 @@ export default {
     }
   }
 
-  .contact {
+  .contact-footer {
     margin-left: auto;
   }
 
-  .item-contact__img {
+  .contact-footer__img {
     margin-right: 10px;
   }
 
