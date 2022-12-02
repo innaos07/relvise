@@ -1,5 +1,8 @@
+export { default as FooterPage } from '../../components/FooterPage.vue'
 export { default as HeaderPage } from '../../components/HeaderPage.vue'
 export { default as MainPage } from '../../components/MainPage.vue'
+export { default as FooterApp } from '../../components/footer/FooterApp.vue'
+export { default as FooterHeaderFooter } from '../../components/footer/HeaderFooter.vue'
 export { default as UIButtonApp } from '../../components/UI/ButtonApp.vue'
 export { default as MainAboutApp } from '../../components/main/AboutApp.vue'
 export { default as MainAdvantagesApp } from '../../components/main/AdvantagesApp.vue'

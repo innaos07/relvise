@@ -6,8 +6,11 @@ You can directly use them in pages and other components without the need to impo
 
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
+- `<FooterPage>` | `<footer-page>` (components/FooterPage.vue)
 - `<HeaderPage>` | `<header-page>` (components/HeaderPage.vue)
 - `<MainPage>` | `<main-page>` (components/MainPage.vue)
+- `<FooterApp>` | `<footer-app>` (components/footer/FooterApp.vue)
+- `<FooterHeaderFooter>` | `<footer-header-footer>` (components/footer/HeaderFooter.vue)
 - `<UIButtonApp>` | `<u-i-button-app>` (components/UI/ButtonApp.vue)
 - `<MainAboutApp>` | `<main-about-app>` (components/main/AboutApp.vue)
 - `<MainAdvantagesApp>` | `<main-advantages-app>` (components/main/AdvantagesApp.vue)

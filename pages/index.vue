@@ -2,7 +2,7 @@
   <div>
     <HeaderPage />
     <MainPage />
-   
+    <FooterPage />
   </div>
 </template>
 
