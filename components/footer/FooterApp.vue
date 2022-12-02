@@ -22,12 +22,11 @@
             </div>
           </div>
         </div>
-
         <div class="col-12 col-lg-4">
           <div class="footer__contact contact">
             <h4 class="contact__title footer__title">Get In Touch</h4>
             <div
-              class="contact__item footer__item d-flex align-items-center"
+              class="contact__item item-contact d-flex align-items-center"
               v-for="item in ContactList"
               :key="item.link"
             >
@@ -165,12 +164,14 @@ export default {
     .footer__content {
       margin-bottom: 30px;
     }
+
     .footer__list {
       &:not(:nth-last-child(-n + 2)) {
         margin-bottom: 30px;
       }
     }
   }
+  
   @media (max-width: $sm-width) {
     padding-top: 30px;
     padding-bottom: 30px;
