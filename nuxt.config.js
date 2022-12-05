@@ -5,7 +5,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   router: {
-    base: '/innaos07/relvise/'
+    base: '/relvise/'
   },
   
 
