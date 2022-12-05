@@ -2,48 +2,40 @@
 <template>
   <header class="header">
     <div class="header__container container">
-      <div 
-        class="header__body d-flex flex-column flex-sm-row align-items-sm-center"
-        :class="{ 'header__body--active' : isShowMenu}"
+      <div
+        class="
+          header__body
+          d-flex
+          flex-column flex-sm-row
+          align-items-sm-center
+        "
+        :class="{ 'header__body--active': isShowMenu }"
       >
-        <a 
-          href="#" 
+        <a
+          href="#"
           class="header__logo"
-          :class="{ 'header__logo--active' : isShowMenu}"
+          :class="{ 'header__logo--active': isShowMenu }"
         >
           Relvise
         </a>
-        <div 
+        <div
           class="header__menu-toggle menu-toggle d-sm-none"
           @click="isShowMenu = !isShowMenu"
         >
           <span class="menu-toggle__element"></span>
         </div>
-        <nav 
-          class="header__menu-nav menu d-sm-none" 
-          v-if="isShowMenu"
-        >
+        <nav class="header__menu-nav menu d-sm-none" v-if="isShowMenu">
           <ul class="menu__list d-flex flex-column justify-content-start">
-            <li  
-              class="menu__item"
-              v-for="item in list"
-              :key="item.name"
-            >
-              <a href="#" class="menu__link">{{item.name}}</a>
+            <li class="menu__item" v-for="item in list" :key="item.name">
+              <a href="item.link" class="menu__link">{{ item.name }}</a>
             </li>
           </ul>
         </nav>
 
-        <nav 
-          class="header__menu-nav mov menu d-none d-sm-block" 
-        >
+        <nav class="header__menu-nav mov menu d-none d-sm-block">
           <ul class="menu__list d-flex alight-items-center">
-            <li  
-              class="menu__item"
-              v-for="item in list"
-              :key="item.name"
-            >
-              <a href="#" class="menu__link">{{item.name}}</a>
+            <li class="menu__item" v-for="item in list" :key="item.name">
+              <a href="item.link" class="menu__link">{{ item.name }}</a>
             </li>
           </ul>
         </nav>
@@ -56,28 +48,27 @@
 export default {
   // name: 'NuxtTutorial',
   data() {
-    return { 
+    return {
       isShowMenu: false,
       list: [
-        { name: 'Home' },
-        { name: 'Product' },
-        { name: 'Pricing' },
-        { name: 'Contact' },
+        { name: "Home", link: '#'},
+        { name: "Product",  link: '#' },
+        { name: "Pricing",  link: '#' },
+        { name: "Contact",  link: '#' },
       ],
     };
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss">
-@import 'bootstrap/dist/css/bootstrap.css';
-@import '@/assets/css/main.scss';
+@import "bootstrap/dist/css/bootstrap.css";
+@import "@/assets/css/main.scss";
 .header {
-
   .header__body {
     position: relative;
     padding: 25px 0;
-    min-height: 105px;    
+    min-height: 105px;
   }
 
   .header__logo {
@@ -85,8 +76,17 @@ export default {
     font-size: 24px;
     line-height: 133.3%;
     letter-spacing: 0.1px;
-    color: inherit;
+    color: #252B42;
     cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
   }
 
   .menu-toggle {
@@ -101,16 +101,16 @@ export default {
       position: relative;
       width: 100%;
       height: 2px;
-      background-color: #000; 
+      background-color: #000;
 
       &::before,
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         width: 100%;
         height: 2px;
-        background-color: #000; 
+        background-color: #000;
       }
 
       &::before {
@@ -121,7 +121,6 @@ export default {
         top: 16px;
       }
     }
-
   }
 
   .header__menu-nav {
@@ -147,15 +146,24 @@ export default {
     letter-spacing: 0.2px;
     color: #737373;
     cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: #252B42;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 
-  @media(max-width: $md-width) {
+  @media (max-width: $md-width) {
     .header__menu-nav {
       margin-left: 80px;
     }
   }
 
-  @media(max-width: $sm-width) {
+  @media (max-width: $sm-width) {
     .header__body {
       min-height: 80px;
 
@@ -170,7 +178,7 @@ export default {
 
     .header__logo {
       &--active {
-      margin-bottom: 20px;
+        margin-bottom: 20px;
       }
     }
 
@@ -180,16 +188,16 @@ export default {
 
     .menu__item {
       width: 100%;
+      border-bottom: 1px solid #e0e0e0;
+
+      &:first-child {
+        border-top: 1px solid #e0e0e0;
+      }
     }
 
     .menu__link {
       padding: 10px 20px;
-      
-      border-bottom: 1px solid #737373;
-
-      // &:not(:last-child) {
-      //   margin-bottom: 20px;
-      // }
+     
     }
   }
 }

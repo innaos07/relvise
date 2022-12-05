@@ -13,14 +13,14 @@
           class="practice__column col-sm-6 col-lg-3 d-flex justify-content-center"
           v-for="item in PracticeList"
           :key="item.title">
-          <div class="practice__item item__practice d-flex flex-column">
-            <div class="item__info">
-              <h3 class="item__title">{{item.title}}</h3>
-              <p class="item__description">{{item.description}}</p>
+          <div class="practice__item item-practice d-flex flex-column">
+            <div class="item-practice__info">
+              <h3 class="item-practice__title">{{item.title}}</h3>
+              <p class="item-practice__description">{{item.description}}</p>
             </div>
-            <a href="#" class="item__image">
+            <a href="#" class="item-practice__image">
               <img 
-                :src="require(`@/assets/img/${item.img}.jpg`)"
+                :src="require(`@/assets/img/${ item.img }.jpg`)"
                 :alt="item.title"
               />
             </a>
@@ -75,14 +75,14 @@ export default {
     margin-top: 45px;
   }
 
-  .item__practice {
+  .item-practice {
     background-color: #fff;
-    .item__info {
+    .item-practice__info {
       flex: 1; 
       padding: 30px;
       height: 100%;
 
-      .item__title {
+      .item-practice__title {
         margin: 0;
         margin-bottom: 15px;
         font-weight: 700;
@@ -92,7 +92,7 @@ export default {
         color: #252B42;
       }
 
-      .item__description {
+      .item-practice__description {
         margin: 0;
         font-weight: 500;
         font-size: 14px;
@@ -102,13 +102,13 @@ export default {
       }
     }
 
-    .item__image {
+    .item-practice__image {
       position: relative;
       display: block; 
       padding-bottom: 60%;
     }
 
-    .item__image img {
+    .item-practice__image img {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -126,13 +126,14 @@ export default {
   }
 
   @media (max-width: $sm-width) {
-    padding-top: 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
+
     .practice__column:not(:last-child)  {
       margin-bottom: 30px;
     }
 
-    .item__practice {
-      // width: 100%;
+    .item-practice {
       max-width: 320px;
     }
   }

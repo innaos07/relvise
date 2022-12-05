@@ -21,19 +21,19 @@
                   </p>
                 </div>
                 <div 
-                  class="about__item item__about d-flex align-items-start"
+                  class="about__item item-about d-flex align-items-start"
                   v-for="item in AboutList"
                   :key="item.title"
                 >
-                  <div class="item__icon ">
+                  <div class="item-about__icon ">
                     <img 
                       :src="require(`@/assets/img/${item.icon}.svg`)"
                       :alt="item.title"
                     />
                   </div>
                   <div>
-                    <h3 class="item__title">{{item.title}}</h3>
-                    <p class="item__text">{{item.text}}</p>
+                    <h3 class="item-about__title">{{item.title}}</h3>
+                    <p class="item-about__text">{{item.text}}</p>
                   </div>
                 </div>
               </div>
@@ -60,7 +60,6 @@ export default {
       ],
     }
   }
-
 }
 </script>
 
@@ -111,14 +110,14 @@ export default {
       margin-bottom: 30px;
     }
 
-    .item__about {
+    .item-about {
       cursor: pointer;
 
-      .item__icon {
+      .item-about__icon {
         margin-right: 20px;
       }
 
-      .item__title {
+      .item-about__title {
         font-size: 16px;
         font-weight: 700;
         line-height: 150%;
@@ -126,7 +125,7 @@ export default {
         color: #252B42;
       }
 
-      .item__text {
+      .item-about__text {
         margin-bottom: 0;
         white-space: nowrap;
         overflow: hidden;
@@ -139,7 +138,7 @@ export default {
       }
     }
 
-    .item__about:not(:last-child) {
+    .about__item:not(:last-child) {
       margin-bottom: 30px;
     }
   }
@@ -168,7 +167,7 @@ export default {
 
   @media (max-width: $sm-width) {
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 
     .about__video {
       padding-bottom: 60%;

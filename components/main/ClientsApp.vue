@@ -1,8 +1,9 @@
 <template>
   <section class="clients">
     <div class="container">
+      <h2 class="visually-hidden">This is our clients</h2>
       <div class="row d-flex align-items-center">
-        <div class="clients__item item__clients col-12 col-sm-4 col-lg-2 d-flex align-items-center justify-content-center"
+        <div class="clients__item item-clients col-12 col-sm-4 col-lg-2 d-flex align-items-center justify-content-center"
           v-for="item in ClientsList"
           :key="item.icon"
         >
@@ -55,7 +56,7 @@ export default {
   padding-bottom: 50px;
   background: #fafafa;
 
-  .item__clients {
+  .item-clients {
     height: 80px;
   }
 
@@ -66,6 +67,8 @@ export default {
   }
 
   @media (max-width: $sm-width) {
+    padding: 30px 0;
+    
     .clients__item:not(:last-child)  {
       margin-bottom: 20px;
     }

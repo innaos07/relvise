@@ -10,14 +10,14 @@
               class="advantages__column col-12 col-sm-6 col-lg-3 d-flex justify-content-center"
               v-for="item in AdvantagesList"
               :key="item.text">
-              <div class="advantages__item item__advantages d-flex flex-column align-items-center">
-                <div class="item__icon d-flex justify-content-center align-items-center">
+              <div class="advantages__item item-advantages d-flex flex-column align-items-center">
+                <div class="item-advantages__icon d-flex justify-content-center align-items-center">
                   <img  
                     :src="require(`@/assets/img/${item.icon}.svg`)"
                     :alt="item.text"/>
                 </div>
-                <p class="item__indicator">{{item.indicator}}</p>
-                <p class="item__text">{{item.text}}</p>
+                <p class="item-advantages__indicator">{{item.indicator}}</p>
+                <p class="item-advantages__text">{{item.text}}</p>
               </div>
           </div>
       </div>
@@ -69,22 +69,22 @@ export default {
       margin-top: 50px;
     }
 
-    .item__advantages {
+    .item-advantages {
       width: 100%;
       height: 100%;
       padding: 30px 40px;
       background-color: #fff;
 
-      .item__icon {
+      .item-advantages__icon {
         height: 48px;
       }
 
-      .item__icon img {
+      .item-advantages__icon img {
         width: 48px;
         height: 48px;
       }
 
-      .item__indicator {
+      .item-advantages__indicator {
         margin: 0;
         font-weight: 700;
         font-size: 40px;
@@ -93,7 +93,7 @@ export default {
         color: #252B42;
       }
 
-      .item__text {
+      .item-advantages__text {
         margin: 0;
         font-weight: 700;
         font-size: 16px;
@@ -103,26 +103,34 @@ export default {
       }
     }
 
-    .item__advantages > *:not(:last-child) {
+    .advantages__item > *:not(:last-child) {
       margin-bottom: 10px;
     }
 
     @media (max-width: $lg-width) {
       padding-top: 50px;
       padding-bottom: 50px;
+
       .advantages__column:not(:nth-last-child(-n+2))  {
         margin-bottom: 30px;
       }
     }
 
     @media (max-width: $sm-width) {
+      padding: 30px 0;
+
       .advantages__column:not(:last-child)  {
         margin-bottom: 30px;
       }
 
-      .item__advantages {
+      .advantages__list {
+        margin-top: 30px;
+      }
+
+      .item-advantages {
         max-width: 320px;
-        .item__indicator {
+
+        .item-advantages__indicator {
           font-size: 32px;
         }
       }

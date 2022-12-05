@@ -55,7 +55,7 @@ export default {
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0.2px;
-    color: #464646;
+    color: #252B42;
   }
 
   .promo__btns {

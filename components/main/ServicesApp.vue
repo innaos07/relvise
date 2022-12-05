@@ -1,21 +1,22 @@
 <template>
   <section class="services">
     <div class="container">
+      <h2 class="visually-hidden">This is our services</h2>
       <div class="row">
         <div
           class="services__column col-12 col-lg-4"
           v-for="item in Serviceslist"
           :key="item.title"
         >
-          <div class="services__item item__services">
-            <div class="item__icon">
+          <div class="services__item item-services">
+            <div class="item-services__icon">
               <img
                 :src="require(`@/assets/img/${item.icon}.svg`)"
                 :alt="item.title"
               />
             </div>
-            <h2 class="item__title">{{ item.title }}</h2>
-            <p class="item__text">{{ item.text }}</p>
+            <h2 class="item-services__title">{{ item.title }}</h2>
+            <p class="item-services__text">{{ item.text }}</p>
           </div>
         </div>
       </div>
@@ -54,39 +55,41 @@ export default {
 @import "@/assets/css/main.scss";
 
 .services {
-  margin-top: -142px;
+  margin-top: -125px;
   background: #FAFAFA;
 
   .services__column:nth-child(3) {
-    .item__services {
+    .item-services {
       background-color: #0d5c63;
 
-      .item__title {
+      .item-services__title {
         color: #fff;
       }
 
-      .item__text {
+      .item-services__text {
         color: #fff;
       }
     }
   }
 
-  .item__services {
+  .item-services {
     padding: 35px 40px;
     height: 100%;
     background-color: #fff;
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
 
-    .item__icon {
+    .item-services__icon {
       width: 48px;
       height: 48px;
     }
 
-    .item__icon img {
+    .item-services__icon img {
       vertical-align: top;
+      width: 48px;
+      height: 48px;
     }
 
-    .item__title {
+    .item-services__title {
       font-weight: 700;
       font-size: 24px;
       line-height: 133%;
@@ -103,7 +106,7 @@ export default {
     }
   }
 
-  .item__services > *:not(:last-child) {
+  .services__item > *:not(:last-child) {
     margin-bottom: 10px;
   }
 
