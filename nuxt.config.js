@@ -4,6 +4,10 @@ export default {
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  router: {
+    base: '/innaos07/relvise/'
+  },
+  
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -46,9 +50,11 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
 }
+

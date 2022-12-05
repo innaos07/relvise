@@ -8,14 +8,14 @@
   "MainPage": {
     "description": "Auto imported from components/MainPage.vue"
   },
+  "UIButtonApp": {
+    "description": "Auto imported from components/UI/ButtonApp.vue"
+  },
   "FooterApp": {
     "description": "Auto imported from components/footer/FooterApp.vue"
   },
   "FooterHeaderFooter": {
     "description": "Auto imported from components/footer/HeaderFooter.vue"
-  },
-  "UIButtonApp": {
-    "description": "Auto imported from components/UI/ButtonApp.vue"
   },
   "MainAboutApp": {
     "description": "Auto imported from components/main/AboutApp.vue"
