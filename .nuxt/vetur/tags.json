@@ -8,9 +8,6 @@
   "MainPage": {
     "description": "Auto imported from components/MainPage.vue"
   },
-  "UIButtonApp": {
-    "description": "Auto imported from components/UI/ButtonApp.vue"
-  },
   "FooterApp": {
     "description": "Auto imported from components/footer/FooterApp.vue"
   },
@@ -40,5 +37,8 @@
   },
   "MainSubscribeApp": {
     "description": "Auto imported from components/main/SubscribeApp.vue"
+  },
+  "UIButtonApp": {
+    "description": "Auto imported from components/UI/ButtonApp.vue"
   }
 }

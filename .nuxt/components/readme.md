@@ -9,7 +9,6 @@ You can directly use them in pages and other components without the need to impo
 - `<FooterPage>` | `<footer-page>` (components/FooterPage.vue)
 - `<HeaderPage>` | `<header-page>` (components/HeaderPage.vue)
 - `<MainPage>` | `<main-page>` (components/MainPage.vue)
-- `<UIButtonApp>` | `<u-i-button-app>` (components/UI/ButtonApp.vue)
 - `<FooterApp>` | `<footer-app>` (components/footer/FooterApp.vue)
 - `<FooterHeaderFooter>` | `<footer-header-footer>` (components/footer/HeaderFooter.vue)
 - `<MainAboutApp>` | `<main-about-app>` (components/main/AboutApp.vue)
@@ -20,3 +19,4 @@ You can directly use them in pages and other components without the need to impo
 - `<MainPromoApp>` | `<main-promo-app>` (components/main/PromoApp.vue)
 - `<MainServicesApp>` | `<main-services-app>` (components/main/ServicesApp.vue)
 - `<MainSubscribeApp>` | `<main-subscribe-app>` (components/main/SubscribeApp.vue)
+- `<UIButtonApp>` | `<u-i-button-app>` (components/UI/ButtonApp.vue)
