@@ -11,12 +11,6 @@
   "UIButtonLink": {
     "description": "Auto imported from components/UI/ButtonLink.vue"
   },
-  "FooterBlock": {
-    "description": "Auto imported from components/footer/FooterBlock.vue"
-  },
-  "FooterHeaderFooter": {
-    "description": "Auto imported from components/footer/HeaderFooter.vue"
-  },
   "MainAboutBlock": {
     "description": "Auto imported from components/main/AboutBlock.vue"
   },
@@ -40,5 +34,11 @@
   },
   "MainSubscribeBlock": {
     "description": "Auto imported from components/main/SubscribeBlock.vue"
+  },
+  "FooterBlock": {
+    "description": "Auto imported from components/footer/FooterBlock.vue"
+  },
+  "FooterHeaderFooter": {
+    "description": "Auto imported from components/footer/HeaderFooter.vue"
   }
 }
