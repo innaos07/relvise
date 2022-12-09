@@ -3,12 +3,7 @@
   <header class="header">
     <div class="header__container container">
       <div
-        class="
-          header__body
-          d-flex
-          flex-column flex-sm-row
-          align-items-sm-center
-        "
+        class="header__body d-flex flex-column flex-sm-row align-items-sm-center"
         :class="{ 'header__body--active': isShowMenu }"
       >
         <a
@@ -26,16 +21,16 @@
         </div>
         <nav class="header__menu-nav menu d-sm-none" v-if="isShowMenu">
           <ul class="menu__list d-flex flex-column justify-content-start">
-            <li class="menu__item" v-for="item in list" :key="item.name">
-              <a href="item.link" class="menu__link">{{ item.name }}</a>
+            <li class="menu__item" v-for="item in listMenu" :key="item.name">
+              <a :href="item.link" class="menu__link">{{ item.name }}</a>
             </li>
           </ul>
         </nav>
 
         <nav class="header__menu-nav mov menu d-none d-sm-block">
           <ul class="menu__list d-flex alight-items-center">
-            <li class="menu__item" v-for="item in list" :key="item.name">
-              <a href="item.link" class="menu__link">{{ item.name }}</a>
+            <li class="menu__item" v-for="item in listMenu" :key="item.name">
+              <a :href="item.link" class="menu__link">{{ item.name }}</a>
             </li>
           </ul>
         </nav>
@@ -46,11 +41,10 @@
 
 <script>
 export default {
-  // name: 'NuxtTutorial',
   data() {
     return {
       isShowMenu: false,
-      list: [
+      listMenu: [
         { name: "Home", link: '#'},
         { name: "Product",  link: '#' },
         { name: "Pricing",  link: '#' },
@@ -62,8 +56,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "bootstrap/dist/css/bootstrap.css";
 @import "@/assets/css/main.scss";
+
 .header {
   .header__body {
     position: relative;

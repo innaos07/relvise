@@ -11,7 +11,7 @@
       <div class="practice__list row">
         <div 
           class="practice__column col-sm-6 col-lg-3 d-flex justify-content-center"
-          v-for="item in PracticeList"
+          v-for="item in practiceList"
           :key="item.title">
           <div class="practice__item item-practice d-flex flex-column">
             <div class="item-practice__info">
@@ -35,7 +35,7 @@
 export default {
   data() {
     return {
-      PracticeList: [
+      practiceList: [
         {
           title: "A single source of truth",
           description: "Newton thought that light was made up of particles, but then it was discovered ",
@@ -63,8 +63,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "bootstrap/dist/css/bootstrap.css";
-@import "@/assets/css/main.scss";
+@import "@/assets/css/variables.scss";
 
 .practice {
   padding-top: 125px;
@@ -77,6 +76,7 @@ export default {
 
   .item-practice {
     background-color: #fff;
+
     .item-practice__info {
       flex: 1; 
       padding: 30px;
@@ -120,6 +120,7 @@ export default {
 
   @media (max-width: $lg-width) {
     padding-top: 50px;
+    
     .practice__column:not(:nth-last-child(-n+2))  {
       margin-bottom: 30px;
     }

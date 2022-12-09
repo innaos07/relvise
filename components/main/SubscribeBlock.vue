@@ -30,8 +30,8 @@ export default {};
 </script>
 
 <style lang="scss">
-@import "bootstrap/dist/css/bootstrap.css";
-@import "@/assets/css/main.scss";
+@import "@/assets/css/variables.scss";
+
 .subscribe {
   position: relative;
   padding-top: 20px;

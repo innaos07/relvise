@@ -5,7 +5,7 @@
       <div class="row">
         <div
           class="services__column col-12 col-lg-4"
-          v-for="item in Serviceslist"
+          v-for="item in serviceslist"
           :key="item.title"
         >
           <div class="services__item item-services">
@@ -28,7 +28,7 @@
 export default {
   data() {
     return {
-      Serviceslist: [
+      serviceslist: [
         {
           title: "Environmental Consulting",
           icon: "services-01",
@@ -51,8 +51,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "bootstrap/dist/css/bootstrap.css";
-@import "@/assets/css/main.scss";
+@import "@/assets/css/variables.scss";
 
 .services {
   margin-top: -125px;

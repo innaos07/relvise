@@ -6,17 +6,17 @@
           <div class="footer__content row">
             <div
               class="footer__list col-6 col-lg-3"
-              v-for="elem in FooterList"
+              v-for="elem in footerList"
               :key="elem.title"
             >
               <h4 class="footer__title">{{ elem.title }}</h4>
               <nav>
                 <div
                   class="footer__item item-footer"
-                  v-for="item in elem.LinkList"
+                  v-for="item in elem.linkList"
                   :key="item.link"
                 >
-                  <a href="item.link" class="item-footer__link">{{item.link}}</a>
+                  <a :href="item.link" class="item-footer__link">{{item.name}}</a>
                 </div>
               </nav>
             </div>
@@ -27,7 +27,7 @@
             <h4 class="contact-footer__title footer__title">Get In Touch</h4>
             <div
               class="contact-footer__item d-flex align-items-center"
-              v-for="item in ContactList"
+              v-for="item in contactList"
               :key="item.link"
             >
               <div class="contact-footer__img">
@@ -36,7 +36,7 @@
                   :alt="item.link"
                 />
               </div>
-              <a class="contact-footer__link" href="item.link">{{ item.link }}</a>
+              <a class="contact-footer__link" :href="item.link">{{ item.link }}</a>
             </div>
           </div>
         </div>
@@ -49,46 +49,46 @@
 export default {
   data() {
     return {
-      FooterList: [
+      footerList: [
         {
           title: "Company Info",
-          LinkList: [
-            { link: "About Us" },
-            { link: "Carrier" },
-            { link: "We are hiring" },
-            { link: "Blog" },
+          linkList: [
+            { name: "About Us", link: "#" },
+            { name: "Carrier",  link: '#'},
+            { name: "We are hiring", link: '#'},
+            { name: "Blog",  link: '#'},
           ],
         },
         {
           title: "Legal",
-          LinkList: [
-            { link: "About Us" },
-            { link: "Carrier" },
-            { link: "We are hiring" },
-            { link: "Blog" },
+          linkList: [
+            { name: "About Us", link: '#' },
+            { name: "Carrier", link: '#'},
+            { name: "We are hiring", link: '#'},
+            { name: "Blog", link: '#'},
           ],
         },
         {
           title: "Features",
-          LinkList: [
-            { link: "About Us" },
-            { link: "Carrier" },
-            { link: "We are hiring" },
-            { link: "Blog" },
+          linkList: [
+            { name: "About Us", link: '#'},
+            { name: "Carrier", link: '#'},
+            { name: "We are hiring", link: '#'},
+            { name: "Blog", link: '#'},
           ],
         },
         {
           title: "Resources",
-          LinkList: [
-            { link: "IOS & Android" },
-            { link: "Watch" },
-            { link: "Customers" },
-            { link: "API" },
+          linkList: [
+            { name: "IOS & Android", link: '#'},
+            { name: "Watch", link: '#'},
+            { name: "Customers", link: '#'},
+            { name: "API", link: '#'},
           ],
         },
       ],
 
-      ContactList: [
+      contactList: [
         {
           link: "(480) 555-0103",
           icon: "footer-01",
@@ -108,8 +108,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "bootstrap/dist/css/bootstrap.css";
-@import "@/assets/css/main.scss";
+@import "@/assets/css/variables.scss";
 
 .footer {
   padding-top: 50px;

@@ -8,8 +8,8 @@
             We know how large objects will act, but things on a small scale.
           </p>
           <div class="promo__btns d-flex flex-column flex-sm-row">
-            <ButtonApp class="promo__btn promo__btn--orange">Get Quote Now</ButtonApp>
-            <ButtonApp class="promo__btn promo__btn--white">Learn More</ButtonApp>
+            <ButtonLink class="promo__btn promo__btn--orange">Get Quote Now </ButtonLink>
+            <ButtonLink class="promo__btn promo__btn--white">Learn More </ButtonLink>
           </div>
         </div>
       </div>
@@ -21,15 +21,15 @@
 </template>
 
 <script>
-import ButtonApp from "../UI/ButtonApp.vue";
+import ButtonLink from "../UI/ButtonLink.vue";
 export default {
-  components: { ButtonApp },
+  components: { ButtonLink },
 };
 </script>
 
 <style lang="scss">
-@import "bootstrap/dist/css/bootstrap.css";
-@import "@/assets/css/main.scss";
+@import "@/assets/css/variables.scss";
+
 .promo {
   position: relative;
 

@@ -8,8 +8,6 @@ import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '../node_modules/normalize-css/normalize.css'
 
-import '../assets/css/main.css'
-
 import '../assets/css/main.scss'
 
 import _6f6c098b from './layouts/default.vue'

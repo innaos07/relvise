@@ -6,13 +6,14 @@
 
 <script>
 export default {
+  props: ['link']
 
 }
 </script>
 
-<style lang="scss" scoped>
-@import 'bootstrap/dist/css/bootstrap.css';
-@import '@/assets/css/main.scss';
+<style lang="scss">
+@import "@/assets/css/variables.scss";
+
  .btn {
     min-height: 48px;
     display: flex;

@@ -8,7 +8,7 @@
       <div class="advantages__list row">
           <div 
               class="advantages__column col-12 col-sm-6 col-lg-3 d-flex justify-content-center"
-              v-for="item in AdvantagesList"
+              v-for="item in advantagesList"
               :key="item.text">
               <div class="advantages__item item-advantages d-flex flex-column align-items-center">
                 <div class="item-advantages__icon d-flex justify-content-center align-items-center">
@@ -29,7 +29,7 @@
 export default {
   data() {
     return {
-      AdvantagesList: [ 
+      advantagesList: [ 
         {
           icon: 'advantage-01',
           indicator: '972+',
@@ -57,8 +57,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'bootstrap/dist/css/bootstrap.css';
-@import '@/assets/css/main.scss';
+@import "@/assets/css/variables.scss";
 
 .advantages {
     padding-top: 80px;

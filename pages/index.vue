@@ -1,8 +1,8 @@
 <template>
   <div>
-    <HeaderPage />
-    <MainPage />
-    <FooterPage />
+    <HeaderComponent />
+    <MainComponent />
+    <FooterComponent />
   </div>
 </template>
 
@@ -11,3 +11,4 @@ export default {
   name: 'IndexPage'
 }
 </script>
+

@@ -1,14 +1,7 @@
 <template>
   <section class="header-footer">
     <div class="container">
-      <div
-        class="
-          header-footer__body
-          d-flex
-          flex-column flex-md-row
-          align-items-md-center
-        "
-      >
+      <div class="header-footer__body d-flex flex-column flex-md-row align-items-md-center">
         <div class="header-footer__left">
           <h3 class="header-footer__title">Consulting Agency For Your Business</h3>
           <p class="header-footer__description">the quick fox jumps over the lazy dog</p>
@@ -24,8 +17,8 @@ export default {};
 </script>
 
 <style lang="scss">
-@import "bootstrap/dist/css/bootstrap.css";
-@import "@/assets/css/main.scss";
+@import "@/assets/css/variables.scss";
+
 .header-footer {
   padding: 40px 0;
 

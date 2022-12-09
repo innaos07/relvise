@@ -4,7 +4,7 @@
       <h2 class="visually-hidden">This is our clients</h2>
       <div class="row d-flex align-items-center">
         <div class="clients__item item-clients col-12 col-sm-4 col-lg-2 d-flex align-items-center justify-content-center"
-          v-for="item in ClientsList"
+          v-for="item in clientsList"
           :key="item.icon"
         >
           <img 
@@ -13,7 +13,6 @@
           />
         </div>
       </div>
-
     </div>
   </section>
 </template>
@@ -22,25 +21,13 @@
 export default {
   data() {
     return {
-      ClientsList: [
-        {
-          icon: 'clients-01',
-        },
-        {
-          icon: 'clients-02',
-        },
-        {
-          icon: 'clients-03',
-        },
-        {
-          icon: 'clients-04',
-        },
-        {
-          icon: 'clients-05',
-        },
-        {
-          icon: 'clients-06',
-        },
+      clientsList: [
+        { icon: 'clients-01' },
+        { icon: 'clients-02' },
+        { icon: 'clients-03' },
+        { icon: 'clients-04' },
+        { icon: 'clients-05' },
+        { icon: 'clients-06' },
       ],
     }
   }
@@ -48,8 +35,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "bootstrap/dist/css/bootstrap.css";
-@import "@/assets/css/main.scss";
+@import "@/assets/css/variables.scss";
 
 .clients {
   padding-top: 50px;

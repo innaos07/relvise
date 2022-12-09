@@ -10,7 +10,7 @@
       </div>
       <div class="contacts__body d-flex flex-column flex-lg-row align-items-center justify-content-lg-center">
         <div class="contacts__item item-contacts d-flex flex-column justify-content-center align-items-center"
-          v-for="item in ContactsList"
+          v-for="item in contactsList"
           :key="item.icon"
           :class="{ 'item-contacts--active': item.isActive }"
         >
@@ -36,7 +36,7 @@
 export default {
   data() {
     return {
-      ContactsList: [
+      contactsList: [
         {
           icon: "contacts-01",
           emailOne: "georgia.young@example.com",
@@ -71,8 +71,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "bootstrap/dist/css/bootstrap.css";
-@import "@/assets/css/main.scss";
+@import "@/assets/css/variables.scss";
 
 .contacts {
   padding-top: 80px;

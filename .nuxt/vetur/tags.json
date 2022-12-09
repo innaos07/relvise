@@ -1,44 +1,44 @@
 {
-  "FooterPage": {
-    "description": "Auto imported from components/FooterPage.vue"
+  "FooterComponent": {
+    "description": "Auto imported from components/FooterComponent.vue"
   },
-  "HeaderPage": {
-    "description": "Auto imported from components/HeaderPage.vue"
+  "HeaderComponent": {
+    "description": "Auto imported from components/HeaderComponent.vue"
   },
-  "MainPage": {
-    "description": "Auto imported from components/MainPage.vue"
+  "MainComponent": {
+    "description": "Auto imported from components/MainComponent.vue"
   },
-  "FooterApp": {
-    "description": "Auto imported from components/footer/FooterApp.vue"
+  "FooterBlock": {
+    "description": "Auto imported from components/footer/FooterBlock.vue"
   },
   "FooterHeaderFooter": {
     "description": "Auto imported from components/footer/HeaderFooter.vue"
   },
-  "MainAboutApp": {
-    "description": "Auto imported from components/main/AboutApp.vue"
+  "UIButtonLink": {
+    "description": "Auto imported from components/UI/ButtonLink.vue"
   },
-  "MainAdvantagesApp": {
-    "description": "Auto imported from components/main/AdvantagesApp.vue"
+  "MainAboutBlock": {
+    "description": "Auto imported from components/main/AboutBlock.vue"
   },
-  "MainClientsApp": {
-    "description": "Auto imported from components/main/ClientsApp.vue"
+  "MainAdvantagesBlock": {
+    "description": "Auto imported from components/main/AdvantagesBlock.vue"
   },
-  "MainContactsApp": {
-    "description": "Auto imported from components/main/ContactsApp.vue"
+  "MainClientsBlock": {
+    "description": "Auto imported from components/main/ClientsBlock.vue"
   },
-  "MainPracticeApp": {
-    "description": "Auto imported from components/main/PracticeApp.vue"
+  "MainContactsBlock": {
+    "description": "Auto imported from components/main/ContactsBlock.vue"
   },
-  "MainPromoApp": {
-    "description": "Auto imported from components/main/PromoApp.vue"
+  "MainPracticeBlock": {
+    "description": "Auto imported from components/main/PracticeBlock.vue"
   },
-  "MainServicesApp": {
-    "description": "Auto imported from components/main/ServicesApp.vue"
+  "MainPromoBlock": {
+    "description": "Auto imported from components/main/PromoBlock.vue"
   },
-  "MainSubscribeApp": {
-    "description": "Auto imported from components/main/SubscribeApp.vue"
+  "MainServicesBlock": {
+    "description": "Auto imported from components/main/ServicesBlock.vue"
   },
-  "UIButtonApp": {
-    "description": "Auto imported from components/UI/ButtonApp.vue"
+  "MainSubscribeBlock": {
+    "description": "Auto imported from components/main/SubscribeBlock.vue"
   }
 }
