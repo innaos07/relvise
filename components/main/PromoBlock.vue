@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div class="promo__image">
+    <div class="promo__image d-none d-sm-block">
       <img src="@/assets/img/promo.jpg" alt="promo" class="" />
     </div>
   </section>
@@ -32,6 +32,7 @@ export default {
 
 .promo {
   position: relative;
+  background: #c3eaee;
 
   .promo__body {
     position: relative;
@@ -62,6 +63,10 @@ export default {
     margin-bottom: 20px;
   }
 
+  .promo__btn {
+    transition: all 0.5s;
+  }
+
   .promo__btn:not(:last-child) {
     margin-right: 10px;
   }
@@ -70,10 +75,14 @@ export default {
     background-color: #ff7b47;
     color: #fff;
 
-    &:hover {
-      color:  #ff7b47;
-      border: 2px solid #ff7b47;
-      background-color: transparent;
+    &:hover,
+    &:focus {
+      background-color: #ec6a36;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 0.8;
     }
   }
 
@@ -81,9 +90,15 @@ export default {
     border: 2px solid #0d5c63;
     color: #0d5c63;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: #fff;
       background-color:#0d5c63;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 0.8;
     }
   }
 
@@ -109,12 +124,19 @@ export default {
   }
 
   @media (max-width: $sm-width) {
+    .promo__body {
+      margin-top: 80px;
+      padding-bottom: 140px;
+    }
+
     .promo__title {
-      font-size: 50px;
+      margin-bottom: 15px;
+      font-size: 36px;
     }
 
     .promo__description {
-      margin-bottom: 55px;
+      font-size: 18px;
+      margin-bottom: 40px;
     }
 
     .promo__btn:not(:last-child) {

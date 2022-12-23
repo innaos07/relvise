@@ -1,7 +1,7 @@
 <template>
   <section class="contacts">
     <div class="container">
-      <div class="contacts__header header d-flex flex-column justify-content-center">
+      <div class="contacts__header d-flex flex-column justify-content-center">
         <h2 class="header__title">Get In Touch</h2>
         <p class="header__description">
           Problems trying to resolve the conflict between<br>
@@ -107,6 +107,17 @@ export default {
       text-align: center;
       letter-spacing: 0.2px;
       color: inherit;
+      transition: all 0.5s;
+
+      &:hover,
+      &:focus {
+        opacity: 0.8;
+        outline: none;
+      }
+
+      &:active {
+        text-decoration: underline;
+      }
     }
 
     .item-contacts__title {
@@ -135,10 +146,14 @@ export default {
       transition: all 0.5s;
 
       &:hover,
-      &:active {
+      &:focus {
         border: 1px solid #ff7b47;
         background-color: #ff7b47;
         color: #fff;
+      }
+
+      &:active {
+        background-color: #ec6a36;
       }
     }
   }

@@ -9,20 +9,15 @@
         </p>
       </div>
       <div class="practice__list row">
-        <div 
-          class="practice__column col-sm-6 col-lg-3 d-flex justify-content-center"
-          v-for="item in practiceList"
+        <div class="practice__column col-sm-6 col-lg-3 d-flex justify-content-center" v-for="item in practiceList"
           :key="item.title">
           <div class="practice__item item-practice d-flex flex-column">
             <div class="item-practice__info">
-              <h3 class="item-practice__title">{{item.title}}</h3>
-              <p class="item-practice__description">{{item.description}}</p>
+              <h3 class="item-practice__title">{{ item.title }}</h3>
+              <p class="item-practice__description">{{ item.description }}</p>
             </div>
             <a href="#" class="item-practice__image">
-              <img 
-                :src="require(`@/assets/img/${ item.img }.jpg`)"
-                :alt="item.title"
-              />
+              <img :src="require(`@/assets/img/${item.img}.jpg`)" :alt="item.title" />
             </a>
           </div>
         </div>
@@ -69,7 +64,7 @@ export default {
   padding-top: 125px;
   padding-bottom: 80px;
   background: #fafafa;
-  
+
   .practice__list {
     margin-top: 45px;
   }
@@ -78,7 +73,7 @@ export default {
     background-color: #fff;
 
     .item-practice__info {
-      flex: 1; 
+      flex: 1;
       padding: 30px;
       height: 100%;
 
@@ -104,7 +99,7 @@ export default {
 
     .item-practice__image {
       position: relative;
-      display: block; 
+      display: block;
       padding-bottom: 60%;
     }
 
@@ -120,8 +115,8 @@ export default {
 
   @media (max-width: $lg-width) {
     padding-top: 50px;
-    
-    .practice__column:not(:nth-last-child(-n+2))  {
+
+    .practice__column:not(:nth-last-child(-n+2)) {
       margin-bottom: 30px;
     }
   }
@@ -130,7 +125,7 @@ export default {
     padding-top: 10px;
     padding-bottom: 50px;
 
-    .practice__column:not(:last-child)  {
+    .practice__column:not(:last-child) {
       margin-bottom: 30px;
     }
 

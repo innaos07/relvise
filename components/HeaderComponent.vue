@@ -3,13 +3,12 @@
   <header class="header">
     <div class="header__container container">
       <div
-        class="header__body d-flex flex-column flex-sm-row align-items-sm-center"
+        class="header__body d-flex flex-column flex-sm-row align-items-start align-items-sm-center"
         :class="{ 'header__body--active': isShowMenu }"
       >
         <a
           href="#"
           class="header__logo"
-          :class="{ 'header__logo--active': isShowMenu }"
         >
           Relvise
         </a>
@@ -19,7 +18,7 @@
         >
           <span class="menu-toggle__element"></span>
         </div>
-        <nav class="header__menu-nav menu d-sm-none" v-if="isShowMenu">
+        <nav class="header__menu menu d-sm-none" v-if="isShowMenu">
           <ul class="menu__list d-flex flex-column justify-content-start">
             <li class="menu__item" v-for="item in listMenu" :key="item.name">
               <a :href="item.link" class="menu__link">{{ item.name }}</a>
@@ -27,7 +26,7 @@
           </ul>
         </nav>
 
-        <nav class="header__menu-nav mov menu d-none d-sm-block">
+        <nav class="header__menu menu d-none d-sm-block">
           <ul class="menu__list d-flex alight-items-center">
             <li class="menu__item" v-for="item in listMenu" :key="item.name">
               <a :href="item.link" class="menu__link">{{ item.name }}</a>
@@ -59,27 +58,32 @@ export default {
 @import "@/assets/css/main.scss";
 
 .header {
+  position: relative;
+
   .header__body {
-    position: relative;
     padding: 25px 0;
     min-height: 105px;
   }
 
   .header__logo {
+    display: block;
     font-weight: 700;
     font-size: 24px;
     line-height: 133.3%;
     letter-spacing: 0.1px;
     color: #252B42;
-    cursor: pointer;
     text-decoration: none;
+    transition: all 0.5s;
+    cursor: pointer;
 
-    &:hover {
-      opacity: 0.9;
+    &:hover,
+    &:focus {
+      color: #ff7b47;
+      outline: none;
     }
 
     &:active {
-      opacity: 0.8;
+      opacity: 0.5;
     }
   }
 
@@ -89,6 +93,7 @@ export default {
     right: 20px;
     width: 30px;
     height: 16px;
+    cursor: pointer;
 
     .menu-toggle__element {
       display: block;
@@ -96,6 +101,7 @@ export default {
       width: 100%;
       height: 2px;
       background-color: #000;
+      transition: all 0.5s;
 
       &::before,
       &::after {
@@ -105,6 +111,7 @@ export default {
         width: 100%;
         height: 2px;
         background-color: #000;
+        transition: all 0.5s;
       }
 
       &::before {
@@ -114,10 +121,25 @@ export default {
       &::after {
         top: 16px;
       }
+
+      &:hover,
+      &:hover::before,
+      &:hover::after,
+      &:focus,
+      &:focus::before,
+      &:focus::after {
+        background-color: #ff7b47;
+      }
+
+      &:active,
+      &:active::before,
+      &:active::after {
+        opacity: 0.5;
+      }
     }
   }
 
-  .header__menu-nav {
+  .header__menu {
     margin-left: 130px;
   }
 
@@ -142,8 +164,10 @@ export default {
     cursor: pointer;
     text-decoration: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: #252B42;
+      outline: none;
     }
 
     &:active {
@@ -158,6 +182,15 @@ export default {
   }
 
   @media (max-width: $sm-width) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 80px;
+    background-color: #fff;
+    z-index: 5000;
+    box-shadow: 0 0 14px -7px rgba(0, 0, 0, 0.3);
+
     .header__body {
       min-height: 80px;
 
@@ -170,14 +203,13 @@ export default {
       margin-left: 0;
     }
 
-    .header__logo {
-      &--active {
-        margin-bottom: 20px;
-      }
-    }
-
     .menu__list {
-      margin: 0 -15px;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      z-index: 5000;
+      background: #fff;
     }
 
     .menu__item {
@@ -191,7 +223,6 @@ export default {
 
     .menu__link {
       padding: 10px 20px;
-     
     }
   }
 }

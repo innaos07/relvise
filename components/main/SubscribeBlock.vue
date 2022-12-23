@@ -52,7 +52,7 @@ export default {};
     position: relative;
     padding: 30px 50px;
     background-color: #17213c;
-    z-index: 10000;
+    z-index: 1000;
 
     .subscribe__title {
       margin: 0;
@@ -93,12 +93,14 @@ export default {};
         color: #fafafa;
         transition: all 0.5s;
 
-        &:hover {
-          background: #e86734;
+        &:hover,
+        &:focus {
+          background: #ec6a36;
+          outline: none;
         }
 
         &:active {
-          background: #f18357;
+          opacity: 0.9;
         }
       }
     }

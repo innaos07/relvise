@@ -11,15 +11,10 @@
       </div>
       <div class="about__body row">
         <div class="about__video col-12 col-lg-6">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/bNpx7gpSqbY"
-            title="YouTube video player"
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/bNpx7gpSqbY" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+            allowfullscreen></iframe>
         </div>
         <div class="about__content col-12 col-lg-6">
           <div class="about__top">
@@ -29,16 +24,9 @@
               freelancers who want a simple way to plan their schedule.
             </p>
           </div>
-          <div
-            class="about__item item-about d-flex align-items-start"
-            v-for="item in aboutList"
-            :key="item.title"
-          >
+          <div class="about__item item-about d-flex align-items-start" v-for="item in aboutList" :key="item.id">
             <div class="item-about__icon">
-              <img
-                :src="require(`@/assets/img/${item.icon}.svg`)"
-                :alt="item.title"
-              />
+              <img :src="require(`@/assets/img/${item.icon}.svg`)" :alt="item.title" />
             </div>
             <div>
               <h3 class="item-about__title">{{ item.title }}</h3>
@@ -57,11 +45,13 @@ export default {
     return {
       aboutList: [
         {
+          id: 1,
           icon: "about-01",
           title: "the quick fox jumps over the lazy dog",
           text: "Things on a very small scale very small scale very small scale ...",
         },
         {
+          id: 2,
           icon: "about-02",
           title: "the quick fox jumps over the lazy dog",
           text: "Things on a very small scale very small scale very small scale ...",

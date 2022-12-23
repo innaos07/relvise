@@ -30,7 +30,6 @@ export default {
     .btn {
         flex: 1 1 100%;
     }
-
 }
 
 </style>

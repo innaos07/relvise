@@ -7,14 +7,14 @@
             <div
               class="footer__list col-6 col-lg-3"
               v-for="elem in footerList"
-              :key="elem.title"
+              :key="elem.id"
             >
               <h4 class="footer__title">{{ elem.title }}</h4>
               <nav>
                 <div
                   class="footer__item item-footer"
                   v-for="item in elem.linkList"
-                  :key="item.link"
+                  :key="item.id"
                 >
                   <a :href="item.link" class="item-footer__link">{{item.name}}</a>
                 </div>
@@ -28,12 +28,12 @@
             <div
               class="contact-footer__item d-flex align-items-center"
               v-for="item in contactList"
-              :key="item.link"
+              :key="item.id"
             >
               <div class="contact-footer__img">
                 <img
                   :src="require(`@/assets/img/${item.icon}.svg`)"
-                  :alt="item.link"
+                  :alt="item.id"
                 />
               </div>
               <a class="contact-footer__link" :href="item.link">{{ item.link }}</a>
@@ -51,53 +51,60 @@ export default {
     return {
       footerList: [
         {
+          id: 1,
           title: "Company Info",
           linkList: [
-            { name: "About Us", link: "#" },
-            { name: "Carrier",  link: '#'},
-            { name: "We are hiring", link: '#'},
-            { name: "Blog",  link: '#'},
+            { name: "About Us", link: "#", id: 14 },
+            { name: "Carrier",  link: '#', id: 25 },
+            { name: "We are hiring", link: '#', id: 33 },
+            { name: "Blog",  link: '#', id: 46 },
           ],
         },
         {
+          id: 2,
           title: "Legal",
           linkList: [
-            { name: "About Us", link: '#' },
-            { name: "Carrier", link: '#'},
-            { name: "We are hiring", link: '#'},
-            { name: "Blog", link: '#'},
+            { name: "About Us", link: '#', id: 12 },
+            { name: "Carrier", link: '#', id: 21 },
+            { name: "We are hiring", link: '#', id: 41 },
+            { name: "Blog", link: '#', id: 51 },
           ],
         },
         {
+          id: 3,
           title: "Features",
           linkList: [
-            { name: "About Us", link: '#'},
-            { name: "Carrier", link: '#'},
-            { name: "We are hiring", link: '#'},
-            { name: "Blog", link: '#'},
+            { name: "About Us", link: '#', id: 15 },
+            { name: "Carrier", link: '#', id: 34 },
+            { name: "We are hiring", link: '#', id: 54 },
+            { name: "Blog", link: '#', id: 64 },
           ],
         },
         {
+          id: 4,
           title: "Resources",
           linkList: [
-            { name: "IOS & Android", link: '#'},
-            { name: "Watch", link: '#'},
-            { name: "Customers", link: '#'},
-            { name: "API", link: '#'},
+            { name: "IOS & Android", link: '#', id: 57 },
+            { name: "Watch", link: '#', id: 47 },
+            { name: "Customers", link: '#', id: 77 },
+            { name: "API", link: '#', id: 97 },
           ],
         },
       ],
 
       contactList: [
         {
+          id: 1,
           link: "(480) 555-0103",
           icon: "footer-01",
         },
         {
+          id: 2,
           link: "4517 Washington Ave. Manchester, Kentucky 39495",
           icon: "footer-02",
         },
         {
+          id: 3,
           link: "debra.holt@example.com",
           icon: "footer-03",
         },
@@ -142,8 +149,10 @@ export default {
       margin-bottom: 10px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 0.8;
+      outline: none;
     }
 
     &:active {

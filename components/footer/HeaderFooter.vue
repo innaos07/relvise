@@ -59,10 +59,15 @@ export default {};
     transition: all 0.5s;
 
     &:hover,
-    &:active {
+    &:focus {
       border: 1px solid #ff7b47;
       background-color: #fff;
       color: #ff7b47;
+    }
+
+    &:active {
+      border: 1px solid #ec6a36;
+      color: #ec6a36;
     }
   }
 
