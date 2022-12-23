@@ -32,7 +32,6 @@ export default {
 
 .promo {
   position: relative;
-  background: #c3eaee;
 
   .promo__body {
     position: relative;
@@ -124,6 +123,8 @@ export default {
   }
 
   @media (max-width: $sm-width) {
+    background: #c3eaee;
+    
     .promo__body {
       margin-top: 80px;
       padding-bottom: 140px;

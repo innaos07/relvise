@@ -8,14 +8,14 @@
   "MainComponent": {
     "description": "Auto imported from components/MainComponent.vue"
   },
+  "UIButtonLink": {
+    "description": "Auto imported from components/UI/ButtonLink.vue"
+  },
   "FooterBlock": {
     "description": "Auto imported from components/footer/FooterBlock.vue"
   },
   "FooterHeaderFooter": {
     "description": "Auto imported from components/footer/HeaderFooter.vue"
-  },
-  "UIButtonLink": {
-    "description": "Auto imported from components/UI/ButtonLink.vue"
   },
   "MainAboutBlock": {
     "description": "Auto imported from components/main/AboutBlock.vue"
